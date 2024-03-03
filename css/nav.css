@@ -1,0 +1,135 @@
+* {
+    margin: 0 auto;
+}
+
+  
+#menuContainer {
+    margin-right: 20px;
+}
+
+header {
+  height: 50px;
+  width: 100%;
+  background-color: black;
+}
+
+nav {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 70px;
+    background-color: black; 
+    text-align: center;
+    transition: transform .8s ease;
+    display: flex;
+    align-items: center;
+    font-family: 'Gill Sans', sans-serif;
+}
+
+
+.fa-house {
+    margin-inline: 5px;
+}
+
+#logoContainer {
+    margin-left: 25px;
+}
+
+
+nav:target {
+    transform: translateY(0);
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #CFB991;
+    padding: 10px;
+}
+
+ul a:hover {
+    border-bottom: solid 2px white;
+    transition: .3s;
+}
+
+nav li {
+    display: block;
+    margin-inline: 20px;
+    font-size: 20px;
+}
+
+.hamburger, .close {
+    display: none;
+}
+
+
+@media screen and (max-width: 700px) {
+    nav {
+        width: 100%;
+        height: 40vh;
+        transform: translateY(-100%);
+        z-index: 2;
+        text-align: center;
+    }
+
+    .fa-square-x-twitter {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        z-index: 2;
+    }
+
+    .close {
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 2;
+        scale: 1.5;
+    }
+
+    .hamburger {
+        scale: 2;
+        margin: 12px;
+        color: #CFB991;
+    }
+
+    #logo{
+        display: none;
+    }
+
+    
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        left: -200px;
+    }
+    
+    nav li {
+        margin-block: 25px;
+    }
+}
+
+footer {
+    width: 100%;
+    background-color: black;
+    height: 200px;
+    position: relative;
+    bottom: 0px;
+}

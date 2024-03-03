@@ -1,0 +1,237 @@
+#logo>img {
+    position: absolute;
+    top: -100px;
+    left: -105px;
+    scale: 25%;
+}
+
+.title {
+    position: relative;
+    top: 50px;
+    text-align: center;
+    font-family: 'Gill Sans', sans-serif;
+    font-weight: 300;
+    font-size: xx-large;
+}
+
+.ing_Styling {
+    display: inline-block;
+    margin-inline: 10px;
+    margin-block: 10px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+@fav_Font: 'Gill Sans', sans-serif;
+
+body h2 {
+    .title();
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-block: 60px;
+    overflow-y: hidden;
+
+    #desc {
+        border: 3px solid black;
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        width: 95%;
+
+        section {
+            border: 2px double black;
+            margin-block: 30px;
+            padding: 10px;
+            display: flex;
+            box-sizing: border-box;
+        }
+
+        #sec2, #sec3, #sec4, #sec5 {
+            font-family: @fav_Font;
+            font-size: large;
+        }
+
+        label {
+            font-family: Courier, monospace;
+            font-weight: bold;
+        }
+
+        #ingredients{
+            margin-top: 20px;
+
+            li {
+                .ing_Styling();
+            }
+        }
+
+
+        h2 {
+            font-family: Courier, monospace;
+        }
+
+        #sec2 {
+            margin-top: 70px;
+        }
+
+        #first4 {
+            margin-inline-end: 10px;
+
+            li {
+                margin-block: 20px;
+                font-family: @fav_Font;
+            }
+        }
+
+        #firstPic, #secondPic, #fourthPic {
+            display: flex;
+            align-items: center;
+
+            img {
+                height: 150px;
+            }
+        }
+
+        #num5{
+            margin-inline-end: 20px;
+        }
+
+
+        #num6 {
+            margin-inline-end: 30px;
+
+            ol img {
+                height: 150px;
+            }
+        }
+
+        #thirdPic {
+            display: flex;
+            align-items: flex-end;
+
+            img {
+                height: 200px;    
+                margin-bottom: 150px;
+            }
+        }
+
+        #num7 {
+            margin-inline-end: 20px;
+
+            ol img {
+                height: 200px;
+                margin-bottom: 90px;
+            }
+        }
+
+        #fourthPic {
+            display: flex;
+            align-items: flex-end;
+        }     
+    }
+
+}
+
+@media screen and (min-width: 700px) {
+    #sec2, #sec3, #sec4, #sec5 {
+        margin-inline-start: 10%;
+    }
+
+    #desc {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    img {
+        scale: .7;
+    }
+
+    #sec1, #sec2, #sec3, #sec4, #sec5 {
+        width: 80%;
+        
+        li {
+            font-size: smaller;
+        }
+    }
+
+    #num7 {
+        li img {
+            scale: .6;
+            margin-right: 100px;
+        }
+    }
+
+    #thirdPic img {
+        scale: .5;
+        position: relative;
+        right: 60px;
+    }
+
+    #fourthPic img {
+        position: relative;
+        right: 300px;
+        top: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 554px) {
+   #sec1,#sec2, #sec3, #sec4, #sec5 { 
+        li {
+            font-size: xx-small;
+        }
+   }
+
+    #sec1 ul {
+        position: relative;
+        right: 30px;
+    }
+
+    #firstPic img {
+        scale: .5;
+        position: relative;
+        right: 40px;
+    }
+
+    #secondPic img {
+        position: relative;
+        right: 55px;
+        scale: .4;
+    }
+
+    #num6 ol {
+        position: relative;
+        right: 30px;
+    }
+
+    #num6 ol img {
+        position: relative;
+        right: 50px;
+        top: -30px;
+        scale: .5;
+    }
+
+    #thirdPic {
+        scale: .6;
+        position: relative;
+        right: 175px;
+        top: 90px;
+    }
+
+    #num7 ol img {
+        scale: .45;
+        position: relative;
+        right: 100px;
+    }
+
+    #fourthPic {
+        scale: .6;
+        position: relative;
+        right: 250px;
+        top: 70px;
+    }
+}

@@ -1,0 +1,30 @@
+#logo>img {
+    position: absolute;
+    top: -100px;
+    left: -105px;
+    scale: 25%;
+}
+
+#wrapper1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#imageContainer img {
+    width: 100%;
+}
+
+#imageCaptionContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    text-align: left;
+    font-family: Geneva, sans-serif;
+    font-size: small;
+    height: 275px;
+}
+
+

@@ -1,0 +1,180 @@
+#logo>img {
+    position: absolute;
+    top: -100px;
+    left: -105px;
+    scale: 25%;
+}
+
+.title {
+    position: relative;
+    top: 50px;
+    text-align: center;
+    font-family: 'Gill Sans', sans-serif;
+    font-weight: 300;
+    font-size: xx-large;
+}
+
+.ing_Styling {
+    display: inline-block;
+    margin-inline: 10px;
+    margin-block: 10px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+@fav_Font: 'Gill Sans', sans-serif;
+
+body h2 {
+    .title();
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-block: 60px;
+    overflow-y: hidden;
+
+    #desc {
+        border: 3px solid black;
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        width: 95%;
+    }
+
+    section {
+        border: 2px double black;
+        margin-block: 30px;
+        padding: 10px;
+        display: flex;
+        box-sizing: border-box;
+    }
+
+    label {
+        font-family: Courier, monospace;
+        font-weight: bold;
+    }
+
+    #ingredients{
+        margin-top: 20px;
+
+        li {
+            .ing_Styling();
+        }
+    }
+
+    h2 {
+        font-family: Courier, monospace;
+    }
+
+    #sec2, #sec3 {
+        font-family: @fav_Font;
+        font-size: large;
+    }
+
+    #sec2 {
+        margin-top: 70px;
+
+        #num1 {
+            margin-inline-end: 30px;
+
+            ol {
+                margin-top: 20px;
+
+                img {
+                    height: 250px;
+                }
+            }
+        }
+
+        #firstPic {
+            display: flex;
+            align-items: center;
+
+            img {
+                height: 90px;
+            }
+        }
+    }
+
+    #sec3 {
+
+        #num2 {
+            margin-inline-end: 30px;
+        }
+
+        #secondPic {
+            display: flex;
+            align-items: center;
+
+            img {
+                height: 100px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 700px) {
+    #desc {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    img {
+        scale: .8;
+    }
+
+    #sec1, #sec2, #sec3{
+        width: 90%;
+        
+
+        li {
+            font-size: small;
+        }
+    }
+
+    #num2 ol {
+        position: relative;
+        right: 25px;
+    }
+
+    #secondPic img {
+        width: 400px;
+        position: relative;
+        right: 60px;
+    }
+
+    #desc {
+       padding: -300px;
+    }
+
+}
+
+@media screen and (max-width: 528px) {
+    #sec1,#sec2, #sec3, #sec4, #sec5 { 
+        li {
+            font-size: xx-small;
+        }
+   }
+
+    #sec1 ul {
+        position: relative;
+        right: 40px;
+    }
+
+    #firstPic img {
+        position: relative;
+        right: 50px;
+        scale: .5;
+    }
+
+    #secondPic img {
+        position: relative;
+        right: 130px;
+        scale: .55;
+    }
+
+
+}
